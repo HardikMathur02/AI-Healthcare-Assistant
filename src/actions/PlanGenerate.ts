@@ -121,7 +121,7 @@ export async function generatePersonalizedPlan(
     let weeklyPlan;
     try {
       const completion = await groq.chat.completions.create({
-        model: "gemma2-9b-it",
+        model: "llama-3.1-8b-instant",
         messages: [
           {
             role: "system",
